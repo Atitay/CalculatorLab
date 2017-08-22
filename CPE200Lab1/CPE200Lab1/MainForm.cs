@@ -21,6 +21,7 @@ namespace CPE200Lab1
 
         private void resetAll()
         {
+            firstOperand = null;
             lblDisplay.Text = "0";
             isAllowBack = true;
             hasDot = false;
@@ -61,6 +62,7 @@ namespace CPE200Lab1
                     }
                     break;
                 case "%":
+                    return (Convert.ToDouble(firstOperand) * Convert.ToDouble(secondOperand)/100).ToString();
                     //your code here
                     break;
             }
@@ -113,20 +115,30 @@ namespace CPE200Lab1
                 return;
             }
             operate = ((Button)sender).Text;
-            switch (operate)
+            if (firstOperand != null)
             {
-                case "+":
-                case "-":
-                case "X":
-                case "÷":
-                    firstOperand = lblDisplay.Text;
-                    isAfterOperater = true;
-                    break;
-                case "%":
-                    // your code here
-                    break;
+                string secondOperand = lblDisplay.Text;
+                isAfterOperater = true;
             }
-            isAllowBack = false;
+            else
+            {
+                operate = ((Button)sender).Text;
+                switch (operate)
+                {
+                    case "+":
+                    case "-":
+                    case "X":
+                    case "÷":
+                        firstOperand = lblDisplay.Text;
+                        isAfterOperater = true;
+                        break;
+                    case "%":
+
+                        // your code here
+                        break;
+                }
+                isAllowBack = false;
+            }
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
