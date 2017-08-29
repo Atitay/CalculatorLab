@@ -23,7 +23,7 @@ namespace CPE200Lab1
         private CalculatorEngine engine;
 
         //variable for CalculatorEngine
-        CalculatorEngine engine;
+        
         private double memNum;
         double sum = 0;
         private void resetAll()
