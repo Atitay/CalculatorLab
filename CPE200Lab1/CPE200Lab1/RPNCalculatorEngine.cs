@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,40 +6,37 @@ using System.Threading.Tasks;
 
 namespace CPE200Lab1
 {
-    class RPNCalculatorEngine: CalculatorEngine
+    public class RPNCalculatorEngine : CalculatorEngine
     {
-        public string Process(string str)
+        public new string Process(string str)
         {
-            string result = string.Empty;
             Stack<string> rpnStack = new Stack<string>();
             List<string> parts = str.Split(' ').ToList<string>();
-            foreach(string item in parts)
+            string result;
+            string firstOperand, secondOperand;
+
+            foreach (string token in parts)
             {
-                if (isNumber(item))
+                if (isNumber(token))
                 {
-                    rpnStack.Push(item);
+                    rpnStack.Push(token);
                 }
-                if (isOperator(item))
+                else if (isOperator(token))
                 {
-                    string second = rpnStack.Pop();
-                    string first = rpnStack.Pop();
-                   result = calculate(item, first, second);
+                    //FIXME, what if there is only one left in stack?
+                    secondOperand = rpnStack.Pop();
+                    firstOperand = rpnStack.Pop();
+                    result = calculate(token, firstOperand, secondOperand, 4);
+                    if (result is "E")
+                    {
+                        return result;
+                    }
                     rpnStack.Push(result);
                 }
             }
-            //  split string tolist /array
-            // loop for each element --> till when?
-                    // if isNumber
-                        // push to stack
-                    // if isOperator
-                        // pop second operand
-                        // pop first operand
-                        // result = calculate(operator, first, second)
-                        // push result
-
+            //FIXME, what if there is more than one, or zero, items in the stack?
+            result = rpnStack.Pop();
             return result;
-           
         }
     }
-    
-    }
+}
