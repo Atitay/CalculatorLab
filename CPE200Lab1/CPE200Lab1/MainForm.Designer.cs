@@ -290,71 +290,71 @@
             this.lblDisplay.Text = "0";
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnMC
-            // 
-            this.btnMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.Location = new System.Drawing.Point(12, 167);
-            this.btnMC.Name = "btnMC";
-            this.btnMC.Size = new System.Drawing.Size(88, 64);
-            this.btnMC.TabIndex = 21;
-            this.btnMC.Text = "MC";
-            this.btnMC.UseVisualStyleBackColor = true;
-            this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
-            // 
-            // btnMR
-            // 
-            this.btnMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMR.Location = new System.Drawing.Point(106, 167);
-            this.btnMR.Name = "btnMR";
-            this.btnMR.Size = new System.Drawing.Size(88, 64);
-            this.btnMR.TabIndex = 22;
-            this.btnMR.Text = "MR";
-            this.btnMR.UseVisualStyleBackColor = true;
-            this.btnMR.Click += new System.EventHandler(this.btnMR_Click);
-            // 
-            // btnMP
-            // 
-            this.btnMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMP.Location = new System.Drawing.Point(200, 167);
-            this.btnMP.Name = "btnMP";
-            this.btnMP.Size = new System.Drawing.Size(88, 64);
-            this.btnMP.TabIndex = 23;
-            this.btnMP.Text = "M+";
-            this.btnMP.UseVisualStyleBackColor = true;
-            this.btnMP.Click += new System.EventHandler(this.btnMP_Click);
-            // 
-            // btnMM
-            // 
-            this.btnMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMM.Location = new System.Drawing.Point(294, 167);
-            this.btnMM.Name = "btnMM";
-            this.btnMM.Size = new System.Drawing.Size(88, 64);
-            this.btnMM.TabIndex = 24;
-            this.btnMM.Text = "M-";
-            this.btnMM.UseVisualStyleBackColor = true;
-            this.btnMM.Click += new System.EventHandler(this.btnMM_Click);
-            // 
-            // btnSqr
-            // 
-            this.btnSqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSqr.Location = new System.Drawing.Point(12, 307);
-            this.btnSqr.Name = "btnSqr";
-            this.btnSqr.Size = new System.Drawing.Size(88, 64);
-            this.btnSqr.TabIndex = 25;
-            this.btnSqr.Text = "√";
-            this.btnSqr.UseVisualStyleBackColor = true;
-            this.btnSqr.Click += new System.EventHandler(this.btnUnaryOperator_Click);
-            // 
-            // btnOox
-            // 
-            this.btnOox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOox.Location = new System.Drawing.Point(106, 307);
-            this.btnOox.Name = "btnOox";
-            this.btnOox.Size = new System.Drawing.Size(88, 64);
-            this.btnOox.TabIndex = 26;
-            this.btnOox.Text = "1/x";
-            this.btnOox.UseVisualStyleBackColor = true;
-            this.btnOox.Click += new System.EventHandler(this.btnUnaryOperator_Click);
+          /*             // btnMC
+                        // 
+                        this.btnMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnMC.Location = new System.Drawing.Point(12, 167);
+                        this.btnMC.Name = "btnMC";
+                        this.btnMC.Size = new System.Drawing.Size(88, 64);
+                        this.btnMC.TabIndex = 21;
+                        this.btnMC.Text = "MC";
+                        this.btnMC.UseVisualStyleBackColor = true;
+                        this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
+                        // 
+                        // btnMR
+                        // 
+                        this.btnMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnMR.Location = new System.Drawing.Point(106, 167);
+                        this.btnMR.Name = "btnMR";
+                        this.btnMR.Size = new System.Drawing.Size(88, 64);
+                        this.btnMR.TabIndex = 22;
+                        this.btnMR.Text = "MR";
+                        this.btnMR.UseVisualStyleBackColor = true;
+                        this.btnMR.Click += new System.EventHandler(this.btnMR_Click);
+                        // 
+                        // btnMP
+                        // 
+                        this.btnMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnMP.Location = new System.Drawing.Point(200, 167);
+                        this.btnMP.Name = "btnMP";
+                        this.btnMP.Size = new System.Drawing.Size(88, 64);
+                        this.btnMP.TabIndex = 23;
+                        this.btnMP.Text = "M+";
+                        this.btnMP.UseVisualStyleBackColor = true;
+                        this.btnMP.Click += new System.EventHandler(this.btnMP_Click);
+                        // 
+                        // btnMM
+                        // 
+                        this.btnMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnMM.Location = new System.Drawing.Point(294, 167);
+                        this.btnMM.Name = "btnMM";
+                        this.btnMM.Size = new System.Drawing.Size(88, 64);
+                        this.btnMM.TabIndex = 24;
+                        this.btnMM.Text = "M-";
+                        this.btnMM.UseVisualStyleBackColor = true;
+                        this.btnMM.Click += new System.EventHandler(this.btnMM_Click); 
+                        // 
+                        // btnSqr
+                        // 
+                        this.btnSqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnSqr.Location = new System.Drawing.Point(12, 307);
+                        this.btnSqr.Name = "btnSqr";
+                        this.btnSqr.Size = new System.Drawing.Size(88, 64);
+                        this.btnSqr.TabIndex = 25;
+                        this.btnSqr.Text = "√";
+                        this.btnSqr.UseVisualStyleBackColor = true;
+                        this.btnSqr.Click += new System.EventHandler(this.btnUnaryOperator_Click);
+                        // 
+                        // btnOox
+                        // 
+                        this.btnOox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        this.btnOox.Location = new System.Drawing.Point(106, 307);
+                        this.btnOox.Name = "btnOox";
+                        this.btnOox.Size = new System.Drawing.Size(88, 64);
+                        this.btnOox.TabIndex = 26;
+                        this.btnOox.Text = "1/x";
+                        this.btnOox.UseVisualStyleBackColor = true;
+                        this.btnOox.Click += new System.EventHandler(this.btnUnaryOperator_Click); */
             // 
             // MainForm
             // 
